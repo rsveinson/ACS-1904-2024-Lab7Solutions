@@ -1,17 +1,17 @@
-import java.util.Scanner;
-import java.io.File;
-import java.io.FileNotFoundException;
+//import java.util.Scanner;
+//import java.io.File;
+//import java.io.FileNotFoundException;
 /** 
  * ACS-1904 Lab 7 Driver
  * @Sveinson 
 */
 
 public class RollerCoasterDriver{
-    public static void main(String[] args)throws FileNotFoundException {
+    public static void main(String[] args){
         // create a new train
         RollerCoaster coaster = new RollerCoaster("Big Thunder");
         
-        // create some person/pasengers
+        // create some riders
         coaster.addRider(new Public("Philip", "Fry", 17));
         coaster.addRider(new Student("Hermes", "Conrad", 21, 12345));
         coaster.addRider(new Student("Kif", "Kroker", 15, 65123));
@@ -24,8 +24,8 @@ public class RollerCoasterDriver{
         coaster.addRider(new Public("Dwight", "Conrad", 45));
         coaster.addRider(new Public("Cubert", "Farnsworth", 12));
         
-        // display the pasenger list
-        System.out.println("Train Name: " + coaster.getName());
+        // display the  Coaster name and rider list
+        System.out.println("Roler Coaster Name: " + coaster.getName());
         System.out.println("---------------------------------\n");
         
         coaster.displayRiders();
